@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gomycode</title>
+    <script src="https://kit.fontawesome.com/5e60de50df.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
-    <h1>Mon Portfolio</h1>
+    <h1>Mon<span>Portfolio</span></h1>
     <nav>
         <ul>
-            <li><a href="#">Acceuil</a></li>
+            <li class="active"><a href="#">Acceuil</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#travail">Travail</a></li>
             <li><a href="#CV">CV</a></li>
@@ -24,59 +25,149 @@
    <div class="main">
 
      <section id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <p>Découvrez mon travail et mes projets.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
-    <a href="#travail">Voir mes travaux</a>
+        <div class="left">
+        <span class="textB">Welcome</span>
+        <h1 id="">Je suis Djama Vianney</h1>
+        <p>Développeur web passionné</p>
+        <p>Découvrez mon travail et mes projets.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</p>
+        <div class="btn">
+            <button><a href="#travail">mes travaux</a></button>
+            <button><a href="#CV">Mon Cv</a></button>
+        </div>
+    </div>
+    <div class="right">
+        <div class="groupimg">
+            <img src="../images/marioiipea-removebg-preview.png" alt="un homme">
+        </div>
+    </div>
    </section>
 
     <section id="about">
     <h2>About</h2>
-    <img src="../images/djama.jpg" alt="un homme" width="220" height="160">
-    <p>Je suis un développeur passionné par la création de solutions innovantes. Mon parcours m'a permis d'acquérir des compétences solides en développement web et en programmation.</p>
-    <p>J'aime relever des défis techniques et travailler sur des projets qui ont un impact positif. Mon objectif est de continuer à apprendre et à évoluer dans le domaine du développement.</p>
-    <p>En dehors du travail, j'apprécie la lecture, le sport et les voyages. Je crois que chaque expérience contribue à enrichir ma perspective et ma créativité.</p>
+    <div class="sous-about">
+        <img src="../images/djama.jpg" alt="un homme" width="220" height="160">
+        <p>Je suis un développeur passionné par la création de solutions innovantes. Mon parcours m'a permis d'acquérir des compétences solides en développement web et en programmation. <br><br>
+            J'aime relever des défis techniques et travailler sur des projets qui ont un impact positif. Mon objectif est de continuer à apprendre et à évoluer dans le domaine du développement. <br><br>
+            En dehors du travail, j'apprécie la lecture, le sport et les voyages. Je crois que chaque expérience contribue à enrichir ma perspective et ma créativité.
+        </p>
+    </div>
    </section>
 
     <section id="travail">
     <h2>Travail</h2>
-    <p>J'ai travaillé sur divers projets, allant de la création de sites web interactifs à la mise en place d'applications complexes. Mon expertise inclut le développement front-end et back-end, ainsi que la gestion de bases de données.</p>
-    <p>Je suis toujours à la recherche de nouvelles opportunités pour collaborer sur des projets passionnants et innovants. N'hésitez pas à me contacter si vous souhaitez discuter d'une collaboration ou d'un projet potentiel.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, dolorem.</p>
-    <p>Vous pouvez aller apprendre les bases de developpements web sur youtube:</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/68oSyuKVjeU?si=jGUZEfE5t5T2MLBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container">
+        <div class="card">
+            <img src="../images/laptop-1205256_960_720.jpg" alt="Projet 1">
+            <h3>Application de gestion d'un atelier de maintenance informatique</h3>
+            <p>L'atelier de maintenance informatique du Ministère de la Défense</p>
+            <p>Un outil qui optimise les processus de maintenance et garantit la traçabilité des interventions.</p>
+        </div>
+        <div class="card">
+            <img src="../images/code-.jpg" alt="Projet 2">
+            <h3>Application Notion-like</h3>
+            <p>Une application de prise de notes et de gestion de projet inspirée de Notion, développée avec Django.</p>
+            <p>Une application de prise de notes et de gestion de projet inspirée de Notion, développée avec Django.</p>
+            <p>Une application de prise de notes et de gestion de projet inspirée de Notion, développée avec Django.</p>
+        </div>
+        <div class="card">
+            <img src="../images/web-1.jpg" alt="Projet 3">
+            <h3>Creation d'un Portfolio</h3>
+            <p>Un portfolio dynamique permettant aux développeurs de présenter leurs compétences et projets.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, suscipit?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, suscipit?</p>
+        </div>
+        
+    </div>
    </section>
 
 
    <section id="CV">
-    <h2>CV</h2>
-    <p>Mon CV est disponible en téléchargement. Il contient des informations détaillées sur mon parcours professionnel, mes compétences techniques et mes réalisations.</p>
-    <p>Vous pouvez le télécharger en cliquant sur le lien ci-dessous :</p>
-    <a href="../images/CV djama.jfif" download target="_blank">Télécharger mon CV</a>
+    <h2>Curriculum Vitae</h2>
+    <div class="CV-info">
+        <p>Mon CV est disponible en téléchargement. Il contient des informations détaillées sur mon parcours professionnel, <br> mes compétences techniques et mes réalisations.</p>
+        <p>Vous pouvez le télécharger en cliquant sur le lien ci-dessous :</p>
+        <div class="btn">
+            <button><a href="../images/CV djama.jfif" download target="_blank">Télécharger mon CV</a></button>
+        </div>
+    </div>
    </section>
 
    <section id="contact">
     <h2>Contactez-nous</h2>
-    <form action="" style="width: 200px;">
-        <caption>Vos informations personnelles</caption>
-        <label for="name">Nom:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Envoyer</button>
-    </form>
+    <form action="/action_page.php">
+    <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="email" id="email" name="email" placeholder="Your email..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="tel">Téléphone</label>
+    </div>
+    <div class="col-75">
+      <input type="number" id="tel" name="tel" placeholder="Votre numéro de téléphone..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="city">City</label>
+    </div>
+    <div class="col-75">
+      <select id="city" name="city">
+        <option value="Abidjan">Abidjan</option>
+        <option value="Bingerville">Bingerville</option>
+        <option value="Cocody">Cocody</option>
+        <option value="Abobo">Abobo</option>
+        <option value="Adjame">Adjame</option>
+        <option value="Yopougon">Yopougon</option>
+        <option value="Port-Bouët">Port-Bouët</option>
+        <option value="Treichville">Treichville</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
    </section>
 
-   <footer>
-    <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+   <footer class="footer">
+    <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
     <p>Suivez-moi sur les réseaux sociaux :</p>
-    <ul>
-        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-    </ul>
+    <div class="icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
    </footer>
    </div>
 
