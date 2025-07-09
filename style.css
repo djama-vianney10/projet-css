@@ -43,6 +43,8 @@ section {
     transform: translateY(0);
   }
 }
+
+
 header{
     background-color: #333;
     box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.2);
@@ -98,6 +100,7 @@ ul > li.active a{
 
 #home{
     width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,15 +159,16 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 25px;
     font-weight: 400;
     background-color: var(--my-color-gris-fonce);
     padding: 8px 14px;
-    margin: 40px 5px;
+    margin:10px 5px;
     letter-spacing: 2px;
-    text-transform: capitalize;
     box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    border-radius: 5px;
 }
+
 
 button a{
     text-decoration: none;
@@ -183,7 +187,7 @@ button:hover{
 
 .groupimg img{
     margin-left: 267px;
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     cursor: pointer;
 }
@@ -256,6 +260,7 @@ button:hover{
     font-weight: 400;
     font-family:'Robuto', sans-serif;
     color: var(--my-color-gris-fonce);
+    padding-left: 12px;
 }
 
 #travail{
