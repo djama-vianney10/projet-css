@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /** Importatiion du font goole Roboto **/
+
+/** Style globale **/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**  Appliquer les couleurs de Bootstrap à la racine de la page**/
+
+:root{
+    --bs-blue: #0d6efd;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+}
+
+/** Appliquons du style au header avec du flexbox pour la navigation **/
+
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+    padding: 10px 150px 10px 150px;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-item{
+    font-size: 1rem;
+    color: var(--bs-black);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: all .5s ease;
+}
+
+.menu-item:hover{
+    border-bottom: 1px solid var(--bs-blue);
+    color: var(--bs-blue);
+    padding-bottom: 12px;
+}
+
+
+.btn{
+    text-decoration: none;
+    border: 2px solid var(--bs-primary);
+    color: var(--bs-primary);
+    padding: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-radius: 12px;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+/** Style pour la section des produits , en utilisant la propriéte Grid pour placer les produits en grilles sur les colonnes **/
+.produit{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px 150px 10px 150px;
+}
+
+.produit-card{
+    background-color: var(--bs-white);
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+    padding: 20px;
+    transition: all .3s ease;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.produit-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+}
+
+.produit-card img{
+    width:100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.produit-title{
+    text-align: center;
+    color: var(--bs-info);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.produit-description{
+    text-align: center;
+    color: var(--bs-gray);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.btn-order{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    color: var(--bs-primary);
+    font-size: 1rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.btn-order:hover{
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--bs-gray-800);
+}
+
+.footer p{
+    color: var(--bs-gray-100);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/** Les medias query pour adpater le site web sur differents types d'écrans**/
+
+@media (max-width: 600px) {
+    .produit {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 970px){
+    .produit{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .header-content{
+        box-shadow: none;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .footer{
+         background-color: transparent;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer p{
+        font-size: 0.7rem;
+        text-align: center;
+        color: var(--bs-dark);
+    }
+}
+
