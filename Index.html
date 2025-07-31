@@ -3,170 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gomycode</title>
+    <title>cocoCrafted</title>
+
+
+
+
+    <!--Les feuilles de style-->
     <script src="https://kit.fontawesome.com/5e60de50df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <header>
-    <h1>Mon<span>Portfolio</span></h1>
-    <nav>
-        <ul>
-            <li class="active"><a href="#">Acceuil</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#travail">Travail</a></li>
-            <li><a href="#CV">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-   </header>
-
-   <div class="main">
-     <section id="home">
-        <div class="left">
-        <span class="textB">Welcome</span>
-        <h1 id="">Je suis Djama Vianney</h1>
-        <p>Software Developpement | Junior développeur, étudiant à Gomycode, <br> et Youtubeur|Full Stack</p>
-        <div class="btn">
-            <button><a href="#travail">mes travaux</a></button>
-            <button><a href="#CV">Mon Cv</a></button>
-        </div>
+  <!--La navbar-->
+  <nav class="navbar navbar-expand-lg fixed-top border-bottom border-1 border-secondary">
+  <div class="container">
+    <a class="navbar-brand logo" href="#">cocoCrafted</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link other-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link other-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link other-link" href="#">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link other-link ">Contact</a>
+        </li>
+      </ul>
     </div>
-    <div class="right">
-        <div class="groupimg">
-            <img src="../images/marioiipea-removebg-preview.png" alt="un homme">
-        </div>
+  </div>
+</nav>
+
+<!--Section hero-->
+<section class="hero py-5">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12 col-md-6">
+        <h2 class="h5 text-capitalize color-h2 mb-2">Hello, my name is</h2>
+        <h1 class="fw-bold text-uppercase mb-2 color-h1">Djama Anthony vianney</h1>
+        <p class="text-secondary h6 mb-5">Un développeur web junior passioné et dévoué, motivé par le monde en constante évolution de la technologie et ses possibilités illimitées</p>
+        <a href="" class="cnn">contact moi</a>
+      </div>
+      <div class="col-12 col-md-6">
+      </div>
     </div>
-   </section>
+  </div>
+</section>
 
-    <section id="about">
-    <h2>About</h2>
-    <div class="sous-about">
-        <img src="../images/djama.jpg" alt="un homme" width="220" height="160">
-        <p>Je suis un développeur passionné par la création de solutions innovantes. Mon parcours m'a permis d'acquérir des compétences solides en développement web et en programmation. <br><br>
-            J'aime relever des défis techniques et travailler sur des projets qui ont un impact positif. Mon objectif est de continuer à apprendre et à évoluer dans le domaine du développement. <br><br>
-            En dehors du travail, j'apprécie la lecture, le sport et les voyages. Je crois que chaque expérience contribue à enrichir ma perspective et ma créativité.
-        </p>
-    </div>
-   </section>
-
-    <section id="travail">
-    <h2>Travail</h2>
-    <div class="container">
-        <div class="card">
-            <img src="../images/laptop-1205256_960_720.jpg" alt="Projet 1">
-            <h3>Application de gestion d'un atelier de maintenance informatique</h3>
-            <p>Ce projet d'application vise à centraliser et automatiser l’ensemble de ces opérations à travers une plateforme web dédiée, permettant de digitaliser les processus de gestion et d’assurer la traçabilité des actions sur chaque matériel.</p>
-        </div>
-        <div class="card">
-            <img src="../images/code-.jpg" alt="Projet 2">
-            <h3>Application Notion-like</h3>
-            <p>Ce projet consiste à concevoir une application web inspirée de Notion, une plateforme de productivité tout-en-un permettant la prise de notes, la gestion de contenu, l'organisation de tâches et la collaboration.</p>
-        </div>
-        <div class="card">
-            <img src="../images/web-1.jpg" alt="Projet 3">
-            <h3>Creation d'un Portfolio</h3>
-            <p>Le projet consiste à concevoir un site web statique structuré autour de sections clés telles que l’accueil, la présentation personnelle, les compétences techniques, les projets réalisés, les expériences, les services et les contacts.</p>
-        </div>
-         <div class="card">
-            <img src="../images/family2.jpg" alt="Projet 4">
-            <h3>Site statique d'un album photo</h3>
-            <p>Ce projet est un site web statique conçu pour présenter une collection d’images sous forme d’album photo.</p>
-            <p>Il permet de visualiser les photos de manière organisée et esthétique, avec une interface simple et fluide.</p>
-        </div>
-    </div>
-   </section>
-
-
-   <section id="CV">
-    <h2>Curriculum Vitae</h2>
-    <div class="CV-info">
-        <p>Mon CV est disponible en téléchargement. Il contient des informations détaillées sur mon parcours professionnel, <br> mes compétences techniques et mes réalisations.</p>
-        <p>Vous pouvez le télécharger en cliquant sur le lien ci-dessous :</p>
-        <div class="btn">
-            <button><a href="../images/CV djama.jfif" download target="_blank">Télécharger mon CV</a></button>
-        </div>
-    </div>
-   </section>
-
-   <section id="contact">
-    <h2>Contactez-nous</h2>
-    <form action="/action_page.php">
+<!--Section about-->
+<section class="about py-5">
+  <div class="container">
     <div class="row">
-    <div class="col-25">
-      <label for="fname">First Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="lname">Last Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="email">Email</label>
-    </div>
-    <div class="col-75">
-      <input type="email" id="email" name="email" placeholder="Your email..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="tel">Téléphone</label>
-    </div>
-    <div class="col-75">
-      <input type="number" id="tel" name="tel" placeholder="Votre numéro de téléphone..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="city">City</label>
-    </div>
-    <div class="col-75">
-      <select id="city" name="city">
-        <option value="Abidjan">Abidjan</option>
-        <option value="Bingerville">Bingerville</option>
-        <option value="Cocody">Cocody</option>
-        <option value="Abobo">Abobo</option>
-        <option value="Adjame">Adjame</option>
-        <option value="Yopougon">Yopougon</option>
-        <option value="Port-Bouët">Port-Bouët</option>
-        <option value="Treichville">Treichville</option>
-      </select>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="subject">Subject</label>
-    </div>
-    <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
-   </section>
+      <div class="col-12 col-md-6 ">
+        <img src="images/hero-portfolio.jfif" alt="" class="img-fluid rounded-4 about-image">
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="about-text mt-5 text-white">
+          <span class="about-title text-white"><i class="bi bi-caret-right-fill text-danger"></i>About me</span>
+          <h3 class="h6 text-capitalize fw-bold mb-5 text-white">Qui suis-je</h3>
+          <p class="mb-3 text-secondary about-p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ea!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, provident?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ea!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, provident?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ea!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, provident?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ea!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, provident?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ea!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, provident?
+          </p>
 
-   <footer class="footer">
-    <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
-    <p>Suivez-moi sur les réseaux sociaux :</p>
-    <div class="icons">
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <div class="row skills mb-3">
+            <div class="col-12 col-md-4">
+              <div class="skills-items">
+              <span class="skill1"><i class="fa-brands fa-html5"></i>Html5</span>
+            </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="skills-items">
+              <span class="skill2"><i class="fa-brands fa-css3-alt"></i>Css3</span>
+            </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="skills-items">
+              <span class="skill3"><i class="fa-brands fa-js"></i>JavaScript</span>
+            </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="skills-items">
+              <span class="skill4"><i class="fa-brands fa-bootstrap"></i>Bootstrap</span>
+            </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="skills-items">
+              <span class="skill5"><i class="fa-brands fa-react"></i>React.js</span>
+            </div>
+            </div>
+          </div>
+          <a href="images/CV djama.jfif" target="_blank" class="btn btn-danger">Download Cv</a>
+        </div>
+      </div>
     </div>
-   </footer>
-   </div>
+  </div>
+</section>
 
+<!--Section services-->
+<section class="services py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <span class="about-title text-white"><i class="bi bi-caret-right-fill text-danger"></i>my service</span>
+          <h3 class="h6 text-capitalize fw-bold mb-5 text-white">Que puis-je faire</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="service-card d-flex justify-content-center align-items-center">
+        <div class="service-card-item d-flex justify-content-center align-items-center flex-column">
+          <span><i class="fa-solid fa-pencil"></i></span>
+          <h5>Creative Design</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="service-card d-flex justify-content-center align-items-center">
+        <div class="service-card-item d-flex justify-content-center align-items-center flex-column">
+          <span><i class="bi bi-code-slash"></i></span>
+          <h5>Clean Code</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="service-card d-flex justify-content-center align-items-center">
+        <div class="service-card-item d-flex justify-content-center align-items-center flex-column">
+          <span><i class="bi bi-laptop"></i></span>
+          <h5>User Interface</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+      </div>
+
+       <div class="col-12 col-md-4">
+        <div class="service-card d-flex justify-content-center align-items-center">
+        <div class="service-card-item d-flex justify-content-center align-items-center flex-column">
+          <span><i class="bi bi-bag-check-fill"></i></span>
+          <h5>User Experience</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+      </div>
+
+       <div class="col-12 col-md-4">
+        <div class="service-card d-flex justify-content-center align-items-center">
+        <div class="service-card-item d-flex justify-content-center align-items-center flex-column">
+          <span><i class="bi bi-radioactive"></i></span>
+          <h5>Fast Support</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+      </div>
+
+       <div class="col-12 col-md-4">
+        <div class="service-card d-flex justify-content-center align-items-center">
+        <div class="service-card-item d-flex justify-content-center align-items-center flex-column">
+          <span><i class="bi bi-flag-fill"></i></span>
+          <h5>Branding</h5>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
